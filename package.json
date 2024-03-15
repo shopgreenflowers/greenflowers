@@ -1,0 +1,40 @@
+{
+  "name": "block1",
+  "version": "0.0.1",
+  "description": "test work ",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "task8": "ts-node 08_Instagram_Giveaway/index.ts",
+    "task9": "ts-node 09_Vacation_Grouping/index.ts",
+    "task10": "ts-node 10_Geolocation_By_IP/index.ts",
+    "task13": "nodemon -e ts 13_Authorization/index.ts",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cookie-parser": "^1.4.7",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.11.20",
+    "@types/node-telegram-bot-api": "^0.64.2",
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.64.0",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "@types/inquirer": "^9.0.7",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.3",
+    "googleapis": "^133.0.0",
+    "inquirer": "^8.2.6",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.4.0"
+  }
+}
