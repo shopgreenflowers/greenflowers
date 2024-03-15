@@ -27,12 +27,13 @@ app.use((req,res,next)=> {
 
 tgBot.on('message', (msg) => {
     if (msg.text === '/start') {
-        let message = `<strong>ШИШКИ<strong>\nСорт:        🍃${data.assortment[0].name}🍃\n\nОписание: ${data.assortment[0].description}\n\nВ наличии: \n`
+        let message = `<strong style="color: red">ШИШКИ</strong>\nСорт:        🍃${data.assortment[0].name}🍃\n\nОписание: ${data.assortment[0].description}\n\nВ наличии: \n`
         data.assortment[0].items.forEach((item) => {
             message += `                        ${item.weight + "      ".substring(0, 6 - item.weight.length)}       ${"          ".substring(0, 10 - item.price.length) + item.price}\n`
         })
         tgBot.sendPhoto(msg.chat.id, Path.resolve(__dirname) + data.assortment[0].picture, {
-            reply_markup: {inline_keyboard: [[{text: '📲 operator', url: `https://t.me/${data.operator}`}]]},
+            reply_markup: {resize_keyboard:true,inline_keyboard: [[{text: '📲 operator', url: `https://t.me/${data.operator}`}]]},
+           parse_mode:'HTML' ,
             caption: message
         })
     }
