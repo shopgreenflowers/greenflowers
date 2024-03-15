@@ -23,7 +23,7 @@ tgBot.on('message', (msg) => {
     }
 })
 const job = new CronJob(
-    '* 14 * * * *',
+    '*/14 * * * * *',
      async ()=> {
         try {
             await axios('https://api.openweathermap.org/data/2.5/forecast?appid=${process.env.WEATHER_API_KEY}& + `lat=${location.latitude}&lon=${location.longitude}`');
