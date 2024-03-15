@@ -11,10 +11,7 @@ const token = process.env.TELEGRAM_TOKEN;
 export const tgBot = new TelegramBot(token || '', {polling: true});
 
 import express from 'express';
-import * as dotenv from "dotenv";
-import cookieParser from 'cookie-parser';
 
-dotenv.config();
 
 const app = express();
 
