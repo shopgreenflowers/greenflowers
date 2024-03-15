@@ -1,5 +1,5 @@
 export default {
-  "operator": "KWebDevelop",
+  "operator": "Mr_flover",
   "assortment": [
     {
       "name": "Eleven Roses",
